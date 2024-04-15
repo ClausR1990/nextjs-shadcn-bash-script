@@ -16,7 +16,7 @@ fi
 project_name="${1:-my-next-app}"
 
 # Create a new Next.js app with the provided project name
-yes "" | npx create-next-app@latest "$project_name"
+yes "" | npx create-next-app@14.1.4 "$project_name"
 
 # Wait for the project directory to be created
 while [ ! -d "$project_name" ]; do
